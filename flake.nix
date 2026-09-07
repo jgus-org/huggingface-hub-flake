@@ -5,18 +5,18 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     flake-utils.url = "github:numtide/flake-utils";
     flake-lib = {
-      url = "github:jgus/flake-lib/v1";
+      url = "github:jgus-org/flake-lib/v1";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
     click = {
-      url = "github:jgus/click-flake";
+      url = "github:jgus-org/click-flake";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
       inputs.flake-lib.follows = "flake-lib";
     };
     hf-xet = {
-      url = "github:jgus/hf-xet-flake";
+      url = "github:jgus-org/hf-xet-flake";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
       inputs.flake-lib.follows = "flake-lib";
@@ -74,13 +74,13 @@
                 {
                   reqName = "click";
                   pypiName = "click";
-                  flakeRepo = "jgus/click-flake";
+                  flakeRepo = "jgus-org/click-flake";
                   mode = "resolve";
                 }
                 {
                   reqName = "hf-xet";
                   pypiName = "hf-xet";
-                  flakeRepo = "jgus/hf-xet-flake";
+                  flakeRepo = "jgus-org/hf-xet-flake";
                   mode = "resolve";
                 }
               ];
